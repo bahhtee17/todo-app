@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9e2e8;
+    min-width: 50rem;
+    height: 40vh;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px #000000;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+}

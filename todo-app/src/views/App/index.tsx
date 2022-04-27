@@ -1,8 +1,16 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import style from "./index.module.scss"
+import { useTodoStore } from "../../data/store/useTODOAPP";
 export const App: React.FC = () => {
+    const [tasks, createTask, updateTask, deleteTask] = useTodoStore(state => [state.tasks, state.createTask, state.updateTask, state.deleteTask])
+
+    console.log(tasks)
     return (
-        <article>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quam maxime repellat expedita velit pariatur consequatur soluta sint temporibus error similique rerum animi numquam, quibusdam, a ipsam est fuga. Quidem!</article>
+        <div className={style.container}>
+            <h1 className={style.title}>TODO APP</h1>
+            <section className={style.inputSection}></section>
+            <section className={style.outputSection}></section>
+        </div>
     )
 
 
