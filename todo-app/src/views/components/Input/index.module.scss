@@ -1,0 +1,25 @@
+.container {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vh;
+}
+
+.inputText {
+    height: 3.5vh;
+    width: 100%;
+    border: 1px solid #0f253f;
+    border-radius: 20px;
+    margin: 10px;
+    background-color: #e9e2e8;
+}
+
+.icon {
+    border: none;
+    background-color: #0f253f;
+    color: #e9e2e8;
+    width: 30%;
+    height: 3vh;
+}
